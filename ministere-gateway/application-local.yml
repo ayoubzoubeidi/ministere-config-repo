@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: ministere-gateway
   cloud:
     config:
       discovery:
