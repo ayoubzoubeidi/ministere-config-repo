@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ministere-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ministere-interieur
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id: ministere-interieur
+          uri: lb://ministere-interieur
+          predicates:
+            - Path=/api/v1/persons/**
+        - id: ministere-finance
+          uri: lb://ministere-finance
+          predicates:
+            - Path=/api/v1/amdendes/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://netflix:eureka@localhost:8761/eureka
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
