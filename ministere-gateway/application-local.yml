@@ -1,7 +1,5 @@
 spring:
   cloud:
-    discovery:
-      enabled: true
     gateway:
       routes:
         - id: ministere-interieur
