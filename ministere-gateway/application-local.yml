@@ -11,7 +11,7 @@ spring:
         - id: ministere-finances
           uri: lb://ministere-finances
           predicates:
-            - Path=/api/v1/amdendes/**
+            - Path=/api/v1/amendes/**
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
