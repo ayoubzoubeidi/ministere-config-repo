@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: ministere-interieur
   datasource:
     username: {cipher}6e4ec6de828d7634904fa48dc3fb2a0708d95cb061fefe3b215aa58613f11fd0
     password: {cipher}065e8a6f89c0d138d9d28d815d36d3524e63cd1c0d7535d8d42094386f13a8ae
