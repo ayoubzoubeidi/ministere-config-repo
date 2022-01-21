@@ -1,3 +1,7 @@
+server:
+  port: 8082
+  http2:
+    enabled: true
 spring:
   datasource:
     username: '{cipher}6e4ec6de828d7634904fa48dc3fb2a0708d95cb061fefe3b215aa58613f11fd0'
